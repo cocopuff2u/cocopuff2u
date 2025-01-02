@@ -48,6 +48,7 @@ nav .navbar-nav li a:hover {
     border-bottom-left-radius: 8px;
     animation: pulse2 2s infinite;
     cursor: pointer;
+    z-index: 9999; /* Added to ensure .up is above everything */
 }
 
 .show {
