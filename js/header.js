@@ -84,7 +84,7 @@ function mapSocialLinksData() {
 function mapStatsData() {
     let stats = [
         {
-            "value": "~13",
+            "value": "~15",
             "text-1": "Years",
             "text-2": "Experience"
         },
