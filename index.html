@@ -1,312 +1,395 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-
-    <!-- mobile responsiveness -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- meta tags for link preview -->
-    <meta property="og:title" content="Cody - Apple Dude!" />
-    <meta property="og:url" content="https://www.codykeats.com/" />
-
+<html lang="en">
+  <head>
+    <!-- Metadata of the Webpage -->
+    <!-- Character-set Metadata -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Viewport Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Description Metadata-->
+    <meta name="description" content="Portfolio Website" />
+    <!-- Author Metadata -->
+    <meta name="author" content="Cody M Keats" />
+    <!-- Keyword Metadata -->
+    <meta
+      name="keywords"
+      content="cody keats, cody m keats, cocolabs, cocolabs.dev, mac admin, mac administrator, apple expert, linux systems engineer, systems engineer, software engineer, open source contributor, macos solutions engineer, macos developer"
+    />
+    <!-- Webpage Logo -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <!-- Webpage Title -->
     <title>Cody Keats</title>
-    <link rel="icon" href="images//title/favicon.png" type="image/icon type">
 
-    <!-- css -->
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="theme/core.css">
-    <link rel="stylesheet" href="theme/text_styles.css">
+    <!-- Import Devicon CSS -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Import CSS: Main Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/techStack.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/exp.css">
-    <link rel="stylesheet" href="css/community.css">
-    <link rel="stylesheet" href="css/contact.css">
-
-    <link rel="stylesheet" href="components/currentDate.css">
-
-    <!-- Required for AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- media queries -->
-    <!-- mobile -->
-    <link rel="stylesheet" href="media/mobile/s.css">
-    <link rel="stylesheet" href="media/mobile/xs.css">
-
-    <!-- tablet -->
-    <link rel="stylesheet" href="media/tablet/m.css">
-
-    <!-- desktop -->
-    <link rel="stylesheet" href="media/desktop/ml.css">
-    <link rel="stylesheet" href="media/desktop/l.css">
-    <link rel="stylesheet" href="media/desktop/xl.css">
-    <link rel="stylesheet" href="media/desktop/xl_4k.css">
-
-    <!-- others -->
-    <link rel="stylesheet" href="media/others.css">
-
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- icons -->
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
-        rel="stylesheet">
-
-
-    <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E0PB4Q5QGG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-E0PB4Q5QGG');
-    </script>
-
-</head>
-
-<body>
-
-    <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar">
-        <button id="navbar-icon" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
-            <img src="images//svgs/menu.svg" alt="">
-        </button>
-
-        <a href="#" data-aos="fade-down" data-aos-delay="200" class="navbar-brand">
-            < <span id="brand">Cody Keats</span>/>
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item navbar-action">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item navbar-action">
-                    <a href="#tech" class="nav-link">Tech</a>
-                </li>
-                <li class="nav-item navbar-action">
-                    <a href="#exp" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item navbar-action">
-                    <a href="#community" class="nav-link">Community</a>
-                </li>
-                <li class="nav-item navbar-action">
-                <a href="#contact-div" class="nav-link">Contact</a>
-                </li>
-            </ul>
+  <body>
+    <div id="particles-js">
+      <div class="header">
+        <h1>
+          <span class="site-title">Cody M Keats</span>
+          <span class="site-description">Senior Apple Expert • Linux SME • macOS Solutions Engineer</span>
+        </h1>
+        <div class="header-icons">
+          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/cody-keats/">
+            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a aria-label="My Github Profile" target="_blank" href="https://github.com/cocopuff2u">
+            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+          </a>
+          <a aria-label="Send Email" href="mailto:keats_cody@yahoo.com" target="_blank"
+            ><i class="icon fa fa-envelope"></i>
+          </a>
+          <a aria-label="Send Slack" href="https://macadmins.slack.com/" target="_blank"
+            ><i class="icon fa fa-slack"></i>
+          </a>
         </div>
-    </nav>
-
-    <div id="up" class="up">
-        <i id="up-icon" class="fa fa-chevron-up"></i>
+        <div class="header-links">
+          <a class="link" href="#about" data-scroll>About Me</a>
+          <a class="link" href="#projects" data-scroll>Projects</a>
+        </div>
+      </div>
+      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
 
-    <div id="header-div" class="container-fluid">
-        <div class="grad-circle" id="mini-circle">
-            <a href="https://github.com/cocopuff2u" target="_blank">
-                <i id="repo-link" class="fa fa-github"></i>
+    <!-- About Section -->
+    <section id="about">
+      <!-- User Introduction-->
+      <div class="user-details">
+        <h1>My Story</h1>
+        <picture>
+          <source
+            type="image/webp"
+            srcset="./assets/img/webp/Professional-Picture-Me.webp"
+            alt="Professional Me"
+            width="20%"
+            style="border-radius: 50%"
+          />
+          <img
+            src="./assets/img/jpg/Professional-Picture-Me.jpg"
+            alt="Professional Me"
+            width="20%"
+            style="border-radius: 50%"
+          />
+        </picture>
+          <p>
+          I’m a Mac Administrator at NIWC Atlantic with deep experience managing Apple and Linux systems across higher education, government, and high-compliance environments. My work focuses on streamlining workflows, securing endpoints, and advancing open-source tools to support the broader IT community.
+          <br><br>
+          Beyond day-to-day operations, I actively contribute to open-source projects and maintain MOFA (Microsoft Overview Feed for Apple)—a platform that provides Mac admins with current software and deployment resources. I’m especially passionate about systems engineering, endpoint security, and cross-platform automation, and I welcome collaboration in these areas.
+          <br><br>
+          Outside of work, I enjoy gaming, connecting with my community, and exploring Charleston, SC. I’m also committed to mentorship and sharing knowledge within the Apple admin and open-source spaces.
+          </p>
+      </div>
+
+      <!-- User Specifics -->
+      <div class="user">
+        <!-- Technology Stack #1: Languages -->
+        <div class="tech">
+          <h2>Languages</h2>
+          <div class="tech-icons">
+            <img src="/assets/img/svg/python.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/swift.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/bash.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/javascript.svg" style="height:90px; width:90px; vertical-align:top;" />
+          </div>
+          <p>My favorite languages for systems programming, software engineering, and data analysis.</p>
+        </div>
+        <!-- Technology Stack #2: Front-End -->
+        <div class="tech">
+          <h2>Front-End</h2>
+          <div class="tech-icons">
+            <img src="/assets/img/svg/vuejs.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/react.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/hugo.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/nextjs.svg" style="height:90px; width:90px; vertical-align:top;" />
+          </div>
+          <p>My preferred technologies for front-end web development and component design.</p>
+        </div>
+
+        <!-- Technology Stack #3: Back-End -->
+        <div class="tech">
+          <h2>MDM</h2>
+          <div class="tech-icons">
+            <img src="/assets/img/svg/jamf.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/microsoftintune.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/manageengine.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/kandji.svg" style="height:90px; width:90px; vertical-align:top;" />
+          </div>
+          <p>My preferred technologies for back-end Apple mobile device management solutions.</p>
+        </div>
+
+        <!-- Technology Stack #4: Tools -->
+        <div class="tech">
+          <h2>Tools</h2>
+          <div class="tech-icons">
+            <img src="/assets/img/svg/Git.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/github.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/visualstudiocode.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/docker.svg" style="height:90px; width:90px; vertical-align:top;" />
+          </div>
+          <p>My favorite tools for version control, code editing, and container orchestration.</p>
+        </div>
+      </div>
+
+      <!-- User Specifics -->
+      <div class="user">
+        <!-- Technology Stack #5: Operating Systems -->
+        <div class="tech">
+          <h2>OS</h2>
+          <div class="tech-icons">
+            <img src="/assets/img/svg/apple.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/redhat.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/windows.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/Ubuntu.svg" style="height:90px; width:90px; vertical-align:top;" />
+          </div>
+          <p>My most trusted operating systems for system administration and cross-platform deployment.</p>
+        </div>
+        <!-- Technology Stack #6: Open Source -->
+        <div class="tech">
+          <h2>Open Source</h2>
+          <div class="tech-icons">
+            <img src="/assets/img/svg/mscp.png" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/dialog.png" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/nudge.png" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/truenas.svg" style="height:90px; width:90px; vertical-align:top;" />
+          </div>
+          <p>My favorite open source projects I’ve contributed to or used in production environments.</p>
+        </div>
+
+        <!-- Technology Stack #7: Security -->
+        <div class="tech">
+          <h2>Security</h2>
+          <div class="tech-icons">
+            <img src="/assets/img/svg/trellix.png" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/defender.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/nist.png" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/disa.png" style="height:90px; width:90px; vertical-align:top;" />
+          </div>
+          <p>Trusted tools I rely on for hardening, compliance, and endpoint protection.</p>
+        </div>
+
+        <!-- Technology Stack #8: Infrastructure -->
+        <div class="tech">
+          <h2>Infrastructure</h2>
+          <div class="tech-icons">
+            <img src="/assets/img/svg/aws.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/google.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/ansible.svg" style="height:90px; width:90px; vertical-align:top;" />
+            <img src="/assets/img/svg/azure.png" style="height:90px; width:90px; vertical-align:top;" />
+          </div>
+          <p>My preferred platforms for cloud services, automation, and infrastructure management.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="user-details">
+        <h1>Featured Projects</h1>
+      </div>
+
+      <!-- User Project #1: MOFA Website -->
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/webp/mofawebsite.webp" alt="Personal Website" />
+            <img alt="MOFA Website" src="./assets/img/jpg/mofawebsite.png" />
+          </picture>
+        </div>
+        <div class="contents" style="text-align: center">
+          <h3>MOFA Website</h3>
+          <div>
+            <img
+              height="32"
+              width="32"
+              src="/assets/img/svg/vuejs.svg"
+            />
+            &nbsp;
+            <img
+              height="32"
+              width="32"
+              src="/assets/img/svg/python.svg"
+            />
+            &nbsp;
+            <img 
+            height="32" 
+            width="32"
+            src="/assets/img/svg/github.svg" />
+          </div>
+          <p style="text-align: justify">
+          I developed MOFA (Microsoft Overview Feed for Apple) using Vue.js and Python, hosted on GitHub Pages, to provide Mac administrators with automated, up-to-date feeds, tools, and direct download links for Microsoft Office apps on macOS.
+        </p>
+          <a class="project-link" target="_blank" href="https://mofa.cocolabs.dev">Check it out!</a>
+        </div>
+      </div>
+
+      <!-- User Project #2: BOFA Website -->
+      <div class="user-projects">
+        <div class="images-left">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/webp/bofawebsite.webp" alt="Perpetual Crusades" />
+            <img alt="BOFA Website" src="./assets/img/jpg/bofawebsite.png" />
+          </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>BOFA Website</h3>
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/vuejs.svg"
+          />
+          &nbsp;
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/python.svg"
+          />
+          &nbsp;
+          <img 
+          height="32"
+          width="32" 
+          src="/assets/img/svg/github.svg" 
+          />
+          <p style="text-align: justify">
+          I built BOFA (Browser Overview Feed for Apple) with Vue.js and Python, hosted on GitHub Pages, to provide up-to-date browser feeds for Mac admins. It streamlines deployment with reliable XML, JSON, and YAML data.
+          </p>
+          <a class="project-link" target="_blank" href="https://bofa.cocolabs.dev"
+            >Check it out!</a
+          >
+        </div>
+      </div>
+
+      <!-- User Project #3: STIG Compliance -->
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/webp/stigcompliance.webp" alt="COVID-19 Tracker App" />
+            <img alt="DISA STIG Compliance" src="./assets/img/jpg/stigcompliance.png" />
+          </picture>
+        </div>
+        <div class="contents" style="text-align: center">
+          <h3>DISA STIG Compliance Tool</h3>
+          <div>
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/bash.svg"
+          />
+          &nbsp;
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/visualstudiocode.svg"
+          />
+          </div>
+          <p style="text-align: justify">
+          I designed a DISA STIG compliance script using Bash in Visual Studio Code to automate the enforcement and verification of required security settings. The script checks and applies macOS STIGs to ensure systems meet DISA compliance standards.
+          </p>
+          <a class="project-link" target="_blank" href="https://github.com/cocopuff2u/MacOS_GOV_Scripts">
+            Check it out!
+          </a>
+        </div>
+      </div>
+
+      <!-- Use Project #4: CoCoLabs -->
+      <div class="user-projects">
+        <div class="images-left">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/img/webp/cocolabswebsite.webp"
+              alt="Valuto: Account Management System"
+            />
+            <img alt="Valuto: Account Management System" src="./assets/img/jpg/cocolabswebsite.png" />
+          </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
+          <h3>Cocolabs Website</h3>
+          <div>
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/hugo.svg"
+          />
+          &nbsp;
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/github.svg"
+          />
+          </div>
+          <p style="text-align: justify">
+          I built CoCoLabs using Hugo and hosted it on GitHub Pages as a central hub for all my projects. The site organizes and showcases tools and resources I’ve developed for Mac admins and the open-source community.
+          </p>
+          <a class="project-link" target="_blank" href="https://cocolabs.dev">
+            Check it out!
+          </a>
+        </div>
+      </div>
+
+      <!-- User Project #3: My Github -->
+      <div class="user-projects">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/webp/mygithub.webp" alt="COVID-19 Tracker App" />
+            <img alt="DISA STIG Compliance" src="./assets/img/jpg/mygithub.png" />
+          </picture>
+        </div>
+        <div class="contents" style="text-align: center">
+          <h3>My Github</h3>
+          <div>
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/bash.svg"
+          />
+          &nbsp;
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/python.svg"
+          />  
+          &nbsp;
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/jamf.svg"
+          />
+          &nbsp;
+          <img
+            height="32"
+            width="32"
+            src="/assets/img/svg/dialog.png"
+          />
+          </div>
+          <p style="text-align: justify">
+          I share open-source tools on GitHub using Python, Bash, JavaScript, AppleScript, and HTML to support Mac admins and the tech community. While some work remains private due to my role, I contribute what I can to open-source efforts.
+          </p>
+          <div style="text-align: center;">
+            <a class="project-link" target="_blank" href="https://github.com/cocopuff2u">
+              Check it out!
             </a>
+          </div>
         </div>
-        <div class="grad-circle"></div>
+      </div>
+    </section>
 
-        <div class="tag-wrapper">
-            <div id="chip">
-                <span id="tag-label" class="label tag-title"></span>
-            </div>
-        </div>
-
-        <div class="name">
-            <div class="heading1" id="first-name"></div>
-            <div class="heading1" id="last-name"></div>
-        </div>
-
-        <div class="tag">
-            <div class="trianlge-right"></div>
-            <span id="tag" class="txt-type" data-wait="1000ms"
-                data-words='["Apple Expert", "Jamf Tinkerer", "A Friend!", "Tech Wizard", "Apple Admin", "Leader", "Super Nerd"]'>
-            </span>
-        </div>
-
-        <div id="social-handles" class="flexbox-container">
-            <div class="dash"></div>
-        </div>
-
-        <div class="chat">
-            <a href="#contact-div" class="body2" id="chat-btn">LET'S CHAT!</a>
-        </div>
-
-        <div class="container-fluid image-bg-div">
-            <div class="profile-picture">
-                <img class="dp" src="images/me.png" alt="cody keats profile picture">
-            </div>
-
-            <div id="overall-stats" class="stats stats-div"></div>
-        </div>
-    </div>
-
-    <div class="space"></div>
-
-    <div id="about" class="container-fluid about">
-        <div class="about-img">
-            <img id="about-img" src="images//about/about.png" alt="my journey highlights">
-        </div>
-
-        <div class="about-text">
-            <p id="about-me-title">About Me</p>
-
-            <h1 id="about-me-heading">Hello there! My name is Cody</h1>
-
-            <p id="about-quote">
-                “Innovation distinguishes between a leader and a follower.”
-            </p>
-
-            <p id="about-me-text">As a self-taught distinguished Apple Subject Matter Expert (SME) with an impressive 15+ years of experience spanning both the public and private sectors, I have consistently demonstrated excellence in configuring, building, and deploying onsite and remote systems for complex state and international operations. My expertise transcends conventional Apple SME roles, delving into the forefront of cutting-edge technology like Zero Trust Network Access (ZTNA).
-                <br>
-                <br>
-                My career journey has been marked by diverse roles, ranging from Technical Director for Theatres to Apple Support Manager, Restaurant IT Support Specialist, Legal IT Consultant, and Higher Education IT Support Professional. Each transition has enriched my knowledge base, enabling me to excel in a wide array of real-world IT challenges.
-                <br>
-                <br>
-                My dedication to the Apple ecosystem in a predominantly Windows-driven world has fueled my passion for crafting innovative solutions, architectural designs, and systems. My relentless pursuit of knowledge is evident in my ongoing efforts to integrate the Apple ecosystem into non-Apple-centric businesses. This commitment to mastering the intricacies of the Apple environment drives my enthusiasm for continuous innovation.
-            </p>
-
-            <div class="download-resume">
-                <button type="button" onclick="downloadResume()" class="btn btn-success" id="download-btn">
-                    <i class="fa fa-file-text" style="color: black; background-color: transparent;"></i>
-                    <span
-                        style="color: black; background-color: transparent; font-size: 14px; padding-left: 8px;">Download
-                        Resume</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div id="tech" class=" tech-stack">
-        <div class="tech-stack-detail">
-            <p id="tech-stack-title">Tech Stack</p>
-            <p id="tech-stack-text">
-                In an ever-changing landscape, I embrace change by continually delving into emerging technologies, absorbing them in the most efficient manner, and channeling that knowledge to create innovative solutions, all in pursuit of constant self-improvement :)
-            </p>
-
-            <p class="label-stack">Mobile Device Management Experience</p>
-            <div id="mobile-tech" data-aos="fade-right" data-aos-delay="100" class="tech-row"></div>
-
-            <p class="label-stack">Script Language Experience</p>
-            <div id="web-tech" data-aos="fade-right" data-aos-delay="200" class="tech-row"></div>
-
-            <p class="label-stack">Operating System Experience</p>
-            <div id="server-tech" data-aos="fade-right" data-aos-delay="300" class="tech-row"></div>
-
-            <p class="label-stack">Managed System Admin Experience</p>
-            <div id="database-tech" data-aos="fade-right" data-aos-delay="400" class="tech-row"></div>
-
-            <p class="label-stack">Version Controlling & Management Experience</p>
-            <div id="vc-tech" data-aos="fade-right" data-aos-delay="500" class="tech-row"></div>
-
-            <p class="label-stack">Tools Experience</p>
-            <div id="design-tech" data-aos="fade-right" data-aos-delay="600" class="tech-row"></div>
-        </div>
-
-        <div class="stack-illustration">
-            <img id="stack-illustration" src="images/svgs/stackphoto.png" alt="stack illustrations">
-            <canvas></canvas>
-        </div>
-    </div>
-
-
-    <div id="exp" class="container-fluid exp-div">
-        <p id="tech-stack-title">Experience</p>
-        <p id="tech-stack-text" style="background-color: transparent; text-align: center;">
-            Reflection of what I've been doing so far, so long.
-        </p>
-
-    </div>
-
-    <div id="community" class="container-fluid community-div">
-        <div id="communities" class="communities"></div>
-
-        <div class="cw-info">
-            <span class="body1 cw-title">Community Work</span>
-            <p class="label cw-quote">"If you want to go fast, go alone. If you want to go far, go together"</p>
-
-            <div class="cw-stats-row">
-                <div class="cw-stats-div">
-                    <p class="heading1 cw-number">2</p>
-                    <p class="cw-stats-text">Global Communitites</p>
-                </div>
-                <div class="cw-stats-div">
-                    <p class="heading1 cw-number">10+</p>
-                    <p class="cw-stats-text">Hosted Events</p>
-                </div>
-                <div class="cw-stats-div">
-                    <p class="heading1 cw-number">1,500+</p>
-                    <p class="cw-stats-text">Student Engagements</p>
-                </div>
-            </div>
-
-            <ul id="cw-points" class="cw-points"></ul>
-        </div>
-    </div>
-
-    <div id="contact-div" class="container-fluid contact-div">
-        <p id="tech-stack-title">Get in touch</p>
-        <p id="tech-stack-text" style="background-color: transparent; text-align: center;">
-            Let's do something fun together :)
-        </p>
-
-            <div id="contact-info-div" class="contact-info-div">
-                <div class="line"></div>
-                <div id="social-contact-icons" class="social-contact-icons"></div>
-
-            </div>
-        </div>
-    </div>
-
-    <footer class="foot">
-        <span class="body2 foot-text">Designed & Crafted by </span>
-        <span style="background-color: transparent; color: var(--primary-green); padding-left: 5px; "> Cody Keats</span>
+    
+    <footer class="footer">
+      <p>&copy; Cody M Keats, 2025</p>
     </footer>
 
-    <script type="text/javascript" src="js/header.js"></script>
-    <script type="text/javascript" src="js/typeWriter.js"></script>
-    <script type="text/javascript" src="js/tech.js"></script>
-    <script type="text/javascript" src="js/projects.js"></script>
-    <script type="text/javascript" src="js/experience.js"></script>
-    <script type="text/javascript" src="js/community.js"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-
-    <!-- JS core -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <!-- Import JS: Particles Theme -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Import JS: Sweet Scroll -->
+    <script src="./assets/js/sweet-scroll.min.js"></script>
+    <!-- Import JS: Google Analytics -->
+    <script src="./assets/js/google-analytics.js"></script>
+    <!-- Import JS: Main Script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
