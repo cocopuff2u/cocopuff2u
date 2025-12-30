@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 - Lost in Space | Cody Keats</title>
+    <meta name="description" content="Oops! This page got lost in space. Let's get you back home." />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .error-page {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, #2B32B2, #1488CC);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #particles-404 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+
+      .error-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+        max-width: 600px;
+      }
+
+      .error-code {
+        font-family: 'Rubik', sans-serif;
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 10px;
+        text-shadow: 0 0 30px rgba(255,255,255,0.3);
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @media (min-width: 550px) {
+        .error-code {
+          font-size: 180px;
+        }
+      }
+
+      .error-title {
+        font-family: 'Rubik', sans-serif;
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+
+      @media (min-width: 550px) {
+        .error-title {
+          font-size: 32px;
+        }
+      }
+
+      .error-message {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 15px;
+        margin-bottom: 25px;
+        opacity: 0.9;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+      }
+
+      @media (min-width: 550px) {
+        .error-message {
+          font-size: 17px;
+        }
+      }
+
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 25px;
+      }
+
+      @media (min-width: 550px) {
+        .button-group {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+
+      .home-button {
+        display: inline-block;
+        padding: 12px 28px;
+        background-color: #fff;
+        color: #1488CC;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-weight: 600;
+      }
+
+      .home-button:hover {
+        background-color: transparent;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .secondary-button {
+        display: inline-block;
+        padding: 12px 28px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 30px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .secondary-button:hover {
+        background-color: #fff;
+        color: #1488CC;
+        transform: scale(1.05);
+      }
+
+      .astronaut {
+        font-size: 50px;
+        display: block;
+        margin-bottom: 15px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @media (min-width: 550px) {
+        .astronaut {
+          font-size: 70px;
+        }
+      }
+
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .fun-messages {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 13px;
+        opacity: 0.7;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+
+      .signature {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 13px;
+        opacity: 0.8;
+        margin-top: 15px;
+      }
+
+      .signature a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .signature a:hover {
+        text-decoration: underline;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-icons a {
+        color: #fff;
+        font-size: 20px;
+        opacity: 0.8;
+        transition: all 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-page">
+      <div id="particles-404"></div>
+      <div class="error-content">
+        <span class="astronaut">&#128125;</span>
+        <div class="error-code">404</div>
+        <h1 class="error-title">Houston, we have a problem!</h1>
+        <p class="error-message">
+          Looks like this page drifted off into the cosmos. As someone who dreams of working with NASA someday,
+          I can tell you... even the best explorers get lost sometimes.
+        </p>
+        <p class="fun-messages">
+          "<span id="random-message"></span>"
+        </p>
+        <div class="button-group">
+          <a href="/" class="home-button">Back to Mission Control</a>
+          <a href="/#projects" class="secondary-button">View My Projects</a>
+        </div>
+        <div class="signature">
+          Made with <span style="color: #ff6b6b;">&#9829;</span> by
+          <a href="/">Cody Keats</a> in Charleston, SC
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/cocopuff2u" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/cody-keats/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="mailto:keats_cody@yahoo.com" aria-label="Email">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      // Fun random messages - personalized to Cody
+      const messages = [
+        "This page got lost somewhere between macOS updates.",
+        "Error 404: Page not found. But hey, at least your Mac is compliant!",
+        "This URL failed the STIG compliance check.",
+        "Looks like this page didn't pass M.A.C.E. validation.",
+        "The page you're looking for is vibing with Pluto... still a planet in our hearts.",
+        "This page went to get coffee and join the Mac Admins Slack.",
+        "404: Page is off exploring the final frontier. I'll join it someday!",
+        "sudo find / -name 'this_page' returned nothing. Sorry!",
+        "This page is probably hanging out in /dev/null.",
+        "brew install missing-page failed. Package not found."
+      ];
+
+      document.getElementById('random-message').textContent =
+        messages[Math.floor(Math.random() * messages.length)];
+
+      // Initialize particles with space theme
+      particlesJS('particles-404', {
+        particles: {
+          number: { value: 80, density: { enable: true, value_area: 800 } },
+          color: { value: '#ffffff' },
+          shape: {
+            type: 'circle',
+            stroke: { width: 0, color: '#000000' }
+          },
+          opacity: {
+            value: 0.8,
+            random: true,
+            anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false }
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: { enable: true, speed: 2, size_min: 0.1, sync: false }
+          },
+          line_linked: {
+            enable: false
+          },
+          move: {
+            enable: true,
+            speed: 1,
+            direction: 'none',
+            random: true,
+            straight: false,
+            out_mode: 'out',
+            bounce: false
+          }
+        },
+        interactivity: {
+          detect_on: 'canvas',
+          events: {
+            onhover: { enable: true, mode: 'bubble' },
+            onclick: { enable: true, mode: 'push' },
+            resize: true
+          },
+          modes: {
+            bubble: { distance: 200, size: 6, duration: 2, opacity: 0.8, speed: 3 },
+            push: { particles_nb: 4 }
+          }
+        },
+        retina_detect: true
+      });
+    </script>
+  </body>
+</html>

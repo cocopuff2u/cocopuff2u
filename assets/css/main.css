@@ -5023,7 +5023,8 @@ a img {
     display: flex;
     flex-direction: column; /* Stack .tech vertically by default */
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .user p {
@@ -5059,7 +5060,8 @@ a img {
 }
 
 .user-projects {
-    margin: 20px auto
+    margin: 20px auto;
+    text-align: center;
 }
 
 .user-projects img {
@@ -5079,6 +5081,27 @@ a img {
 
 .user-projects p {
     margin-right: 5px
+}
+
+/* Mobile-first styles for project layout */
+.contents,
+.contents-right {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.images-left,
+.images-right {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 15px auto;
+}
+
+.images-left img,
+.images-right img {
+    max-width: 100%;
+    height: auto;
 }
 
 @media only screen and (min-width:550px) {
@@ -5173,4 +5196,110 @@ a img {
     text-decoration: none;
     margin: 0;
     color: #fff
+}
+
+/* ===========================================
+   Scroll Animations (Desktop Only)
+   =========================================== */
+@media only screen and (min-width: 550px) {
+    .scroll-fade {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .scroll-fade.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .scroll-fade-left {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .scroll-fade-left.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .scroll-fade-right {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .scroll-fade-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ===========================================
+   Contact Form Section
+   =========================================== */
+#contact {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 40px 0;
+}
+
+@media only screen and (min-width: 550px) {
+    #contact {
+        width: 80%;
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1488CC;
+    box-shadow: 0 0 0 3px rgba(20, 136, 204, 0.1);
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 12px 30px;
+    background-color: #1488CC;
+    color: #fff;
+    border: 2px solid #1488CC;
+    border-radius: 8px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+}
+
+.contact-form button:hover {
+    background-color: transparent;
+    color: #1488CC;
+}
+
+.contact-form button:active {
+    transform: scale(0.98);
 }

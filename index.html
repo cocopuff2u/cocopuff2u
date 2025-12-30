@@ -1,25 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Metadata of the Webpage -->
     <!-- Character-set Metadata -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Viewport Metadata -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Description Metadata-->
-    <meta name="description" content="Portfolio Website" />
-    <!-- Author Metadata -->
+
+    <!-- Primary Meta Tags -->
+    <title>Cody Keats - Senior Apple Expert & macOS Solutions Engineer</title>
+    <meta name="title" content="Cody Keats - Senior Apple Expert & macOS Solutions Engineer" />
+    <meta name="description" content="Senior Apple Expert, Linux SME, and macOS Solutions Engineer at NIWC Atlantic. Creator of M.A.C.E. (Mac Advanced Compliance Editor) and maintainer of MOFA. Open-source contributor focused on macOS compliance and security." />
     <meta name="author" content="Cody M Keats" />
-    <!-- Keyword Metadata -->
-    <meta
-      name="keywords"
-      content="cody keats, cody m keats, cocolabs, cocolabs.dev, mac admin, mac administrator, apple expert, linux systems engineer, systems engineer, software engineer, open source contributor, macos solutions engineer, macos developer"
-    />
-    <!-- Webpage Logo -->
+    <meta name="keywords" content="cody keats, cody m keats, cocolabs, cocolabs.dev, mac admin, mac administrator, apple expert, linux systems engineer, systems engineer, software engineer, open source contributor, macos solutions engineer, macos developer, MACE, MOFA, mSCP, macOS compliance, endpoint security" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://codykeats.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://codykeats.com/" />
+    <meta property="og:title" content="Cody Keats - Senior Apple Expert & macOS Solutions Engineer" />
+    <meta property="og:description" content="Senior Apple Expert, Linux SME, and macOS Solutions Engineer. Creator of M.A.C.E. and maintainer of MOFA. Open-source contributor focused on macOS compliance and security." />
+    <meta property="og:image" content="https://codykeats.com/assets/img/jpg/Professional-Picture-Me.jpg" />
+    <meta property="og:site_name" content="Cody Keats" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://codykeats.com/" />
+    <meta name="twitter:title" content="Cody Keats - Senior Apple Expert & macOS Solutions Engineer" />
+    <meta name="twitter:description" content="Senior Apple Expert, Linux SME, and macOS Solutions Engineer. Creator of M.A.C.E. and maintainer of MOFA. Open-source contributor focused on macOS compliance and security." />
+    <meta name="twitter:image" content="https://codykeats.com/assets/img/jpg/Professional-Picture-Me.jpg" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <!-- Webpage Title -->
-    <title>Cody Keats</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://codykeats.com/#website",
+          "url": "https://codykeats.com/",
+          "name": "Cody Keats",
+          "description": "Senior Apple Expert, Linux SME, and macOS Solutions Engineer",
+          "publisher": { "@id": "https://codykeats.com/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://codykeats.com/#person",
+          "name": "Cody M Keats",
+          "url": "https://codykeats.com",
+          "image": "https://codykeats.com/assets/img/jpg/Professional-Picture-Me.jpg",
+          "jobTitle": "Senior Apple Expert & macOS Solutions Engineer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "NIWC Atlantic"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/cody-keats/",
+            "https://github.com/cocopuff2u",
+            "https://cocolabs.dev"
+          ],
+          "knowsAbout": ["macOS", "Apple", "Linux", "Systems Engineering", "Endpoint Security", "MDM", "Compliance", "Swift", "Python", "Bash"]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Featured Projects",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M.A.C.E. - Mac Advanced Compliance Editor",
+              "url": "https://github.com/MACE-App/MACE"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "MOFA - Microsoft Overview Feed for Apple",
+              "url": "https://mofa.cocolabs.dev"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BOFA - Browser Overview Feed for Apple",
+              "url": "https://bofa.cocolabs.dev"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "DISA STIG Compliance Tool",
+              "url": "https://github.com/cocopuff2u/MacOS_GOV_Scripts"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "CoCoLabs",
+              "url": "https://cocolabs.dev"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 
     <!-- Import Devicon CSS -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -35,22 +129,23 @@
           <span class="site-description">Senior Apple Expert • Linux SME • macOS Solutions Engineer</span>
         </h1>
         <div class="header-icons">
-          <a aria-label="My LinkedIn Profile" target="_blank" href="https://www.linkedin.com/in/cody-keats/">
+          <a aria-label="My LinkedIn Profile" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/cody-keats/">
             <i class="icon fa fa-linkedin" aria-hidden="true"></i>
           </a>
-          <a aria-label="My Github Profile" target="_blank" href="https://github.com/cocopuff2u">
+          <a aria-label="My Github Profile" target="_blank" rel="noopener noreferrer" href="https://github.com/cocopuff2u">
             <i class="icon fa fa-github-alt" aria-hidden="true"></i>
           </a>
-          <a aria-label="Send Email" href="mailto:keats_cody@yahoo.com" target="_blank"
+          <a aria-label="Send Email" href="mailto:keats_cody@yahoo.com" target="_blank" rel="noopener noreferrer"
             ><i class="icon fa fa-envelope"></i>
           </a>
-          <a aria-label="Send Slack" href="https://macadmins.slack.com/" target="_blank"
+          <a aria-label="Send Slack" href="https://macadmins.slack.com/" target="_blank" rel="noopener noreferrer"
             ><i class="icon fa fa-slack"></i>
           </a>
         </div>
         <div class="header-links">
           <a class="link" href="#about" data-scroll>About Me</a>
           <a class="link" href="#projects" data-scroll>Projects</a>
+          <a class="link" href="#contact" data-scroll>Contact</a>
         </div>
       </div>
       <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
@@ -59,19 +154,19 @@
     <!-- About Section -->
     <section id="about">
       <!-- User Introduction-->
-      <div class="user-details">
+      <div class="user-details scroll-fade">
         <h1>My Story</h1>
         <picture>
           <source
             type="image/webp"
             srcset="./assets/img/webp/Professional-Picture-Me.webp"
-            alt="Professional Me"
+            alt="Cody Keats - Professional Photo"
             width="20%"
             style="border-radius: 50%"
           />
           <img
             src="./assets/img/jpg/Professional-Picture-Me.jpg"
-            alt="Professional Me"
+            alt="Cody Keats - Professional Photo"
             width="20%"
             style="border-radius: 50%"
           />
@@ -88,7 +183,7 @@
       </div>
 
       <!-- User Specifics -->
-      <div class="user">
+      <div class="user scroll-fade">
         <!-- Technology Stack #1: Languages -->
         <div class="tech">
           <h2>Languages</h2>
@@ -138,7 +233,7 @@
       </div>
 
       <!-- User Specifics -->
-      <div class="user">
+      <div class="user scroll-fade">
         <!-- Technology Stack #5: Operating Systems -->
         <div class="tech">
           <h2>OS</h2>
@@ -190,16 +285,16 @@
 
     <!-- Projects Section -->
     <section id="projects">
-      <div class="user-details">
+      <div class="user-details scroll-fade">
         <h1>Featured Projects</h1>
       </div>
 
 
       <!-- User Project #1: MACE.App -->
-      <div class="user-projects">
+      <div class="user-projects scroll-fade-left">
         <div class="images-left">
           <picture>
-            <img alt="MACE.App Screenshot" src="./assets/img/jpg/mace.png" />
+            <img alt="MACE.App Screenshot" src="./assets/img/jpg/mace.png" loading="lazy" />
           </picture>
         </div>
         <div class="contents-right" style="text-align: center">
@@ -227,16 +322,16 @@
           <p style="text-align: justify">
             M.A.C.E. is a macOS app for Mac admins to easily create, document, and audit compliance baselines using NIST's mSCP 2.0 with visual rule editing and flexible management.
           </p>
-          <a class="project-link" target="_blank" href="https://github.com/MACE-App/MACE">Check it out!</a>
+          <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/MACE-App/MACE">Check it out!</a>
         </div>
       </div>
 
       <!-- User Project #2: MOFA Website -->
-      <div class="user-projects">
+      <div class="user-projects scroll-fade-right">
         <div class="images-right">
           <picture>
-            <source type="image/webp" srcset="./assets/img/webp/mofawebsite.webp" alt="Personal Website" />
-            <img alt="MOFA Website" src="./assets/img/jpg/mofawebsite.png" />
+            <source type="image/webp" srcset="./assets/img/webp/mofawebsite.webp" alt="MOFA Website Screenshot" />
+            <img alt="MOFA Website" src="./assets/img/jpg/mofawebsite.png" loading="lazy" />
           </picture>
         </div>
         <div class="contents" style="text-align: center">
@@ -262,15 +357,15 @@
           <p style="text-align: justify">
           I developed MOFA (Microsoft Overview Feed for Apple) using Vue.js and Python, hosted on GitHub Pages, to provide Mac administrators with automated, up-to-date feeds, tools, and direct download links for Microsoft Office apps on macOS.
         </p>
-          <a class="project-link" target="_blank" href="https://mofa.cocolabs.dev">Check it out!</a>
+          <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://mofa.cocolabs.dev">Check it out!</a>
         </div>
       </div>
       <!-- User Project #2: BOFA Website -->
-      <div class="user-projects">
+      <div class="user-projects scroll-fade-left">
         <div class="images-left">
           <picture>
-            <source type="image/webp" srcset="./assets/img/webp/bofawebsite.webp" alt="Perpetual Crusades" />
-            <img alt="BOFA Website" src="./assets/img/jpg/bofawebsite.png" />
+            <source type="image/webp" srcset="./assets/img/webp/bofawebsite.webp" alt="BOFA Website Screenshot" />
+            <img alt="BOFA Website" src="./assets/img/jpg/bofawebsite.png" loading="lazy" />
           </picture>
         </div>
         <div class="contents-right" style="text-align: center">
@@ -295,18 +390,18 @@
           <p style="text-align: justify">
           I built BOFA (Browser Overview Feed for Apple) with Vue.js and Python, hosted on GitHub Pages, to provide up-to-date browser feeds for Mac admins. It streamlines deployment with reliable XML, JSON, and YAML data.
           </p>
-          <a class="project-link" target="_blank" href="https://bofa.cocolabs.dev"
+          <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://bofa.cocolabs.dev"
             >Check it out!</a
           >
         </div>
       </div>
 
       <!-- User Project #3: STIG Compliance -->
-      <div class="user-projects">
+      <div class="user-projects scroll-fade-right">
         <div class="images-right">
           <picture>
-            <source type="image/webp" srcset="./assets/img/webp/stigcompliance.webp" alt="COVID-19 Tracker App" />
-            <img alt="DISA STIG Compliance" src="./assets/img/jpg/stigcompliance.png" />
+            <source type="image/webp" srcset="./assets/img/webp/stigcompliance.webp" alt="DISA STIG Compliance Tool Screenshot" />
+            <img alt="DISA STIG Compliance" src="./assets/img/jpg/stigcompliance.png" loading="lazy" />
           </picture>
         </div>
         <div class="contents" style="text-align: center">
@@ -327,22 +422,22 @@
           <p style="text-align: justify">
           I designed a DISA STIG compliance script using Bash in Visual Studio Code to automate the enforcement and verification of required security settings. The script checks and applies macOS STIGs to ensure systems meet DISA compliance standards.
           </p>
-          <a class="project-link" target="_blank" href="https://github.com/cocopuff2u/MacOS_GOV_Scripts">
+          <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/cocopuff2u/MacOS_GOV_Scripts">
             Check it out!
           </a>
         </div>
       </div>
 
       <!-- Use Project #4: CoCoLabs -->
-      <div class="user-projects">
+      <div class="user-projects scroll-fade-left">
         <div class="images-left">
           <picture>
             <source
               type="image/webp"
               srcset="./assets/img/webp/cocolabswebsite.webp"
-              alt="Valuto: Account Management System"
+              alt="CoCoLabs Website Screenshot"
             />
-            <img alt="Valuto: Account Management System" src="./assets/img/jpg/cocolabswebsite.png" />
+            <img alt="CoCoLabs Website Screenshot" src="./assets/img/jpg/cocolabswebsite.png" loading="lazy" />
           </picture>
         </div>
         <div class="contents-right" style="text-align: center">
@@ -363,18 +458,18 @@
           <p style="text-align: justify">
           I built CoCoLabs using Hugo and hosted it on GitHub Pages as a central hub for all my projects. The site organizes and showcases tools and resources I’ve developed for Mac admins and the open-source community.
           </p>
-          <a class="project-link" target="_blank" href="https://cocolabs.dev">
+          <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://cocolabs.dev">
             Check it out!
           </a>
         </div>
       </div>
 
       <!-- User Project #3: My Github -->
-      <div class="user-projects">
+      <div class="user-projects scroll-fade-right">
         <div class="images-right">
           <picture>
-            <source type="image/webp" srcset="./assets/img/webp/mygithub.webp" alt="COVID-19 Tracker App" />
-            <img alt="DISA STIG Compliance" src="./assets/img/jpg/mygithub.png" />
+            <source type="image/webp" srcset="./assets/img/webp/mygithub.webp" alt="My GitHub Profile Screenshot" />
+            <img alt="My GitHub Profile Screenshot" src="./assets/img/jpg/mygithub.png" loading="lazy" />
           </picture>
         </div>
         <div class="contents" style="text-align: center">
@@ -408,7 +503,7 @@
           I share open-source tools on GitHub using Python, Bash, JavaScript, AppleScript, and HTML to support Mac admins and the tech community. While some work remains private due to my role, I contribute what I can to open-source efforts.
           </p>
           <div style="text-align: center;">
-            <a class="project-link" target="_blank" href="https://github.com/cocopuff2u">
+            <a class="project-link" target="_blank" rel="noopener noreferrer" href="https://github.com/cocopuff2u">
               Check it out!
             </a>
           </div>
@@ -416,7 +511,20 @@
       </div>
     </section>
 
-    
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="user-details scroll-fade">
+        <h1>Get In Touch</h1>
+        <p>Have a question or want to collaborate? Send me a message!</p>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/xlgekoda" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
     <footer class="footer">
       <div id="footer-particles"></div>
       <p>&copy; Cody M Keats, 2025</p>
@@ -430,5 +538,28 @@
     <script src="./assets/js/google-analytics.js"></script>
     <!-- Import JS: Main Script -->
     <script src="./assets/js/main.js"></script>
+    <!-- Scroll Animations (Desktop Only) -->
+    <script>
+      (function() {
+        // Only enable on desktop (matches CSS media query)
+        if (window.innerWidth < 550) return;
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, {
+          threshold: 0.1,
+          rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Observe all elements with scroll animation classes
+        document.querySelectorAll('.scroll-fade, .scroll-fade-left, .scroll-fade-right').forEach(el => {
+          observer.observe(el);
+        });
+      })();
+    </script>
   </body>
 </html>
