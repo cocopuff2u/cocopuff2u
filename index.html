@@ -541,24 +541,52 @@
     <!-- Scroll Animations (Desktop Only) -->
     <script>
       (function() {
-        // Only enable on desktop (matches CSS media query)
-        if (window.innerWidth < 550) return;
+        const elements = document.querySelectorAll('.scroll-fade, .scroll-fade-left, .scroll-fade-right');
+        let observer = null;
+        let isDesktop = window.innerWidth >= 550;
 
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-            }
+        function initObserver() {
+          if (observer) return; // Already initialized
+
+          observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+              }
+            });
+          }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
           });
-        }, {
-          threshold: 0.1,
-          rootMargin: '0px 0px -50px 0px'
-        });
 
-        // Observe all elements with scroll animation classes
-        document.querySelectorAll('.scroll-fade, .scroll-fade-left, .scroll-fade-right').forEach(el => {
-          observer.observe(el);
-        });
+          elements.forEach(el => observer.observe(el));
+        }
+
+        function handleResize() {
+          const nowDesktop = window.innerWidth >= 550;
+
+          // Switched from mobile to desktop
+          if (nowDesktop && !isDesktop) {
+            initObserver();
+            // Make already-visible elements visible immediately
+            elements.forEach(el => {
+              const rect = el.getBoundingClientRect();
+              if (rect.top < window.innerHeight) {
+                el.classList.add('visible');
+              }
+            });
+          }
+
+          isDesktop = nowDesktop;
+        }
+
+        // Initialize on desktop
+        if (isDesktop) {
+          initObserver();
+        }
+
+        // Handle resize
+        window.addEventListener('resize', handleResize);
       })();
     </script>
   </body>
